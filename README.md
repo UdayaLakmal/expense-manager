@@ -1,10 +1,9 @@
-💰Expenses is a [progressive web application](https://developers.google.com/web/progressive-web-apps/) on top of [Google Sheets](https://developers.google.com/sheets/) 📉 written in [React](https://facebook.github.io/react/) ⚛️. It is only a static HTML that works great on mobile 📱 and can be deployed anywhere.
+💰Expense-manager is a [progressive web application](https://developers.google.com/web/progressive-web-apps/) on top of [Google Sheets](https://developers.google.com/sheets/) 📉 written in [React](https://facebook.github.io/react/) ⚛️. It is only a static HTML that works great on mobile 📱 and can be deployed anywhere.
 
-Check out the [demo](https://demo-expenses.chodounsky.net) but please be considerate and don't break it for others.
 
 ![Delete expense](doc/delete-expense.gif)
 
-It was inspired by the [expense-manager](https://github.com/mitul45/expense-manager) by mitul45 and it uses the [material web components](https://material.io/components/) and [material icons](https://material.io/icons/).
+It was inspired & fork by the [expense](https://github.com/jakubgarfield/expenses) by jakubgarfield 
 
 ## Features
 
@@ -12,9 +11,12 @@ It was inspired by the [expense-manager](https://github.com/mitul45/expense-mana
   * Checking, savings, joint, etc.
 * Categories
 * [Google Sheet](https://docs.google.com/spreadsheets/d/1Lz1_gHIgCKPKhJpFerq9PoNy-TIst7eLZ5plQi5Prv0/edit?usp=sharing) as a backend
-  * Great privacy and access control.
-  * Don't share sensitive data with 3rd party.
-  * Unlimited analysis up to your sheet skill.
+
+  * Uses Google Sheet as a database to store expenses. Why?
+     Privacy. It's your personal data. It should belong to you.
+     Sheets is way better at handling numbers than me. You can do all kinds of analysis using graphs, formulas, etc.
+     I didn't want to write backend 🤓
+     Unlimited analysis up to your sheet skill.
 * Works great on mobile
   * Progressive Web App. Loads quickly and works as a standalone app.
 * Beautiful material design
@@ -25,8 +27,6 @@ It was inspired by the [expense-manager](https://github.com/mitul45/expense-mana
   * This month. Last month. You immediately know how you doing.
 
 ## Get started
-
-You will need a somewhat recent version of [Node](https://nodejs.org/en/) and a place to deploy static HTML under a custom domain (doesn't have to be top level). To get the full offline support with service workers you'll need HTTPS – [CloudFlare](cloudflare.com) works fine or you can use your own certificate.
 
 1) make a copy of [Expense Sheet](https://docs.google.com/spreadsheets/d/1Lz1_gHIgCKPKhJpFerq9PoNy-TIst7eLZ5plQi5Prv0/edit?usp=sharing) to your drive `File -> Make a copy...`
 2) note the id of your new sheet (it's part of the URL)
@@ -57,4 +57,3 @@ After that, they have the same access as you are and can add expenses through th
 
 ---
 
-If you like this project – you might also enjoy [React Digest](https://reactdigest.net/) newsletter 🗞. Subscribe to get the top 5 news from React community every week.
